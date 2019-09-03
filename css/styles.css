@@ -1,0 +1,192 @@
+/* Navigation */
+.nav {
+display:flex;
+flex-direction: row wrap;
+justify-content: flex-end;
+font-size: 24px;
+color: red;
+text-decoration: none;
+}
+
+.nav li {
+  padding: 10px;
+  list-style-type: none;
+
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display:none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+
+  margin: 0 2px;
+
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Logo  */
+.logo {
+  height:auto;
+  width: 50%;
+}
+
+/* body */
+
+h1 {
+  display:flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.rv {
+  padding: 10px;
+  height: auto;
+  width:40%;
+}
+
+.tableRVcamp {
+  padding: 10px;
+  height: 40%;
+  width: 40%;
+}
+
+.classicRV {
+  padding: 10px;
+  height: auto;
+  width: 40%;
+}
+
+.main {
+  display:flex;
+  align-content: space-around;
+}
+
+
+.paragraph {
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* Footer */
+footer {
+display:flex;
+flex-direction: row;
+justify-content: center;
+line-height: 2.5;
+}
+
+footer a {
+  color:red;
+  text-decoration: none;
+}
+
+.footerName {
+  padding: 10px;
+}
+
+.contact {
+  padding: 10px;
+}
+
+.email {
+  padding: 10px;
+}
+
+.facebook {
+  padding: 10px;
+}
+
+.facebookIcon {
+  padding: 10px;
+  height: 20%;
+}
+
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .nav {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .nav {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
