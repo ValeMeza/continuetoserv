@@ -1,25 +1,112 @@
+/* Davids Additions */
+
+html {
+	background-color: #717171;
+	font-family: 'Lora', serif; font-size: 1.2em;
+}
+body {
+	max-width: 1200px;
+	margin: auto;
+}
+
+ul {padding: 0px; 
+
+}
+
+footer {
+	text-shadow: 2px 2px 2px black;
+}
+
+.slideshow-container img {border-radius: 1em; -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);}
+
+.slideshow-container ul {padding: 0 0 0 2em;}
+
+.slideshow-container li {padding: 0 0 .5em 0;}
+
+.rightCol  {
+	float: right;
+	width:49%;
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+	}
+	
+.leftCol {
+	float: left;
+	width:49%;
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+	}
+	
+.centerCol {
+	margin:auto;
+	width: 49%;
+}
+	
+.small {
+	width:28%;
+}
+
+.big {
+	width:70%;
+}
+
+.extrasmall {
+	width:23%;
+}
+
+.extrabig {
+	width:75.5%;
+}
+
+
+
+/* Logo  */
+.logo {
+	margin: auto;
+	max-width: 100%;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	border-radius: 1em;  
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* Slideshow container */
+.slideshow-container {
+	background-color: #fff;
+  position: relative;
+  margin: auto;
+	border-radius: 1em;
+	padding: 2em;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+
 /* Navigation */
 .nav {
-display:flex;
-flex-direction: row wrap;
-justify-content: flex-end;
-font-size: 24px;
-color: red;
+	text-align: center;
+font-size: 1.3em;
 text-decoration: none;
+margin: 0px;
+text-transform: uppercase;
+color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 }
 
 .nav li {
   padding: 10px;
   list-style-type: none;
+	border-radius: .7em .7em 0 0;
 
-}
-
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
 }
 
 .mySlides {
@@ -69,14 +156,18 @@ text-decoration: none;
 .dot {
   cursor: pointer;
 
-  margin: 0 2px;
+  margin: 0 0 0 .2em;
 
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: white;
+	color: #df542e;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
 /* Fading animation */
@@ -97,12 +188,6 @@ text-decoration: none;
   to {opacity: 1}
 }
 
-/* Logo  */
-.logo {
-  height:auto;
-  width: 50%;
-}
-
 /* body */
 
 h1 {
@@ -119,7 +204,7 @@ h1 {
 
 .tableRVcamp {
   padding: 10px;
-  height: 40%;
+  height: auto;
   width: 40%;
 }
 
@@ -130,8 +215,7 @@ h1 {
 }
 
 .main {
-  display:flex;
-  align-content: space-around;
+	overflow: auto;
 }
 
 
@@ -142,14 +226,16 @@ h1 {
 
 /* Footer */
 footer {
-display:flex;
-flex-direction: row;
-justify-content: center;
-line-height: 2.5;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	color: #df542e;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 }
 
 footer a {
-  color:red;
+  color:white;
   text-decoration: none;
 }
 
@@ -175,18 +261,48 @@ footer a {
 }
 
 
-/* Medium screens */
-@media all and (max-width: 800px) {
-  .nav {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    justify-content: space-around;
+@media screen and (max-width: 1200px) {
+  body {
+	  margin: 0 1em;
   }
 }
 
-/* Small screens */
-@media all and (max-width: 500px) {
-  .nav {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
-  }
+
+
+@media screen and (max-width: 700px) {
+.nav li {
+		width: 100%;
+		padding: .3em 0;
+	margin-bottom: .3em;
+		border-radius: 1em;
+	font-size: .8em
+	}
+	
+	.dot {margin: 0;}
+	
+	.slideshow-container {padding: 1em;}
+	
+.leftCol {
+	float: none;
+	width:100%;
+	
 }
+
+.rightCol {
+	float: none;
+	width:100%;
+}
+
+.centerCol {
+	margin: inherit;
+	width: 100%;
+}
+	
+}
+
+
+
+
+
+
+

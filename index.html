@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="eng" style="background: url(images/skybackground.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; ">
 <head>
   <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
 </head>
 <body>
   <img class="logo" src="images/CTSLogo.jpg" alt="logo">
@@ -10,18 +17,21 @@
     <li class="dot" onclick="currentSlide(1)">Home</li>
     <li class="dot" onclick="currentSlide(2)">Maintenance/Repairs</li>
     <li class="dot" onclick="currentSlide(3)">Accessories</li>
-    <li class="dot" onclick="currentSlide(4)">Meet the Staff</li>
+    <li class="dot" onclick="currentSlide(4)">Meet the Team</li>
   </ul>
-  <hr>
   <div class="slideshow-container">
-
     <!-- Home -->
     <div class="mySlides fade">
       <div class="main">
-        <img class="rv" src="images/RVsfacingeachother.jpg" alt="RVs">
-        <div class="paragraph">
-          <h1>Home</h1>
-          CONTINUE TO seRV is a mobile RV repair and maintenance company serving the greater Albuquerque, NM area. Our services include maintenance because we believe maintenance is the proactive approach to minimize costly and untimely repairs, repairs because things break and need fixed, and accessories because there are many accessories on the market that are necessary for RVing such as hitch work or accessories that just make your RV more suitable for your adventures and accessories that just make life easier.
+		  <div class="leftCol"><img src="images/RVsfacingeachother.jpg" alt="RVs" width="100%"></div>
+        
+        <div class="rightCol">
+          <i>CONTINUE TO seRV</i> is a mobile RV repair and maintenance company serving the greater Albuquerque, NM area.
+			  
+			  <p>Our services include: <ul>
+			<li><b>Maintenance</b> - because we believe maintenance is the proactive approach to minimize costly and untimely repairs.</li> 
+			<li><b>Repairs</b> - because things break and need fixed, 
+			<li><b>Accessories</b> - because there are many accessories on the market that are necessary for RVing such as hitch work or accessories that just make your RV more suitable for your adventures and accessories that just make life easier.</li></p>
         </div>
       </div>
     </div>
@@ -29,8 +39,8 @@
     <!-- Maintenance -->
     <div class="mySlides fade">
       <div class="main">
-        <img class="tableRVcamp" src="images/tableRVcamp.jpg" alt="RVs">
-        <div class="paragraph">
+		   <div class="leftCol"><img src="images/tableRVcamp.jpg" alt="RVs" width="100%"></div>
+        <div class="rightCol">
           <h1>Maintenance</h1>
           If you take care of it, it will take care of you
           Maintenance is necessary to extend the life expectancy of equipment and components. The RV manufacturers give optimum maintenance schedules that you could follow or you can decide with your goals and usage what works best for you. We are specialized and trained to work on RVs so please let us guide you in making your RV a luxury and not a headache or a money pit. Please consult with us in what you have concerns about and what you want to accomplish and we can accurately guide you to meeting those goals.
@@ -39,18 +49,19 @@
 
     <!-- Repairs -->
       <div class="main">
-        <div class="paragraph">
+		   <div class="rightCol"><img src="images/oldclassc.jpg" alt="RVs" width="100%"></div>
+        <div class="leftCol">
           <h1 class="repairs">Repairs</h1>
           We know your RV is your road to adventure. We understand the inconvenience of being without your vehicle and we know your recreational vehicle is also your sleeping arrangement. Most importantly we know and understand the many systems and components of a RV and their diversity. Our goal is to make all of our customers completely satisfied, get you back to your adventure, and making RV service accessible with knowledgeable staff and an available schedule. When needing repairs give us a call and we can diagnose the issue and begin working on the solution to your problem with our industry trained technicians.
         </div>
-        <img class="classicRV" src="images/oldclassc.jpg" alt="RVs">
+		  
       </div>
     </div>
 
     <!-- Accessories -->
     <div class="mySlides fade">
       <div class="main">
-        <img class="rv" src="images/lineofRVs.jpg" alt="RVs">
+        <img src="images/lineofRVs.jpg" width="100%" alt="RVs" >
         <div class="paragraph">
           <h1>Accessories</h1>
           The RV industry has many accessories to make RVing safer and easier. CONTINUE TO seRV can install hitchwork to make your vehicle compatible to your RV, accessories that make your RV work better for you and use of it and accessories that just make life easier out on the road.
@@ -61,7 +72,7 @@
     <!-- Meet The Staff -->
     <div class="mySlides fade">
       <div class="main">
-        <img class="rv" src="images/kidsdogcamp.jpg" alt="RVs">
+        <img src="images/kidsdogcamp.jpg" alt="RVs" width="100%">
         <div class="paragraph">
           <h1>Meet the Team</h1>
           CONTINUE TO seRV  is a local business owned by Jason Burns a Albuquerque native and active outdoorsman with his family of 5. Jason has been in the RV Industry since 2005 expanding his services to his customers and maintaining his great reputation throughout those 14 years.
@@ -71,13 +82,12 @@
   </div>
   <br>
 
-  <hr>
   <footer>
-    <div class="footerName"> RV Repair & Maintenance </div>
-    <div class="contact">Contact Us Now - Phone: <a href="tel:(505)552-1331">(505)552-1331</a></div>
-    <div class="email">Email: <a href="mailto:service@continuetoserv.com">service@continuetoserv.com</a></div>
+	<div class="contact">Contact Us Now</div>
+    <div class="phone">Phone: <br> <a href="tel:(505)552-1331">(505)552-1331</a></div>
+    <div class="email">Email: <br> <a href="mailto:service@continuetoserv.com" style="text-transform:lowercase;">service@continuetoserv.com</a></div>
     <div class="facebook">Find us on Facebook:</div>
-    <a href="https://www.facebook.com/RVRepairABQ"><img src="images/icon-square-facebook.png" class="facebookIcon"></a>
+    <a href="https://www.facebook.com/RVRepairABQ"><img src="images/icon-square-facebook.png" class="facebookIcon" width="50px"></a>
   </footer>
   <script src="js/scripts.js"></script>
 </body>
